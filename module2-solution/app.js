@@ -13,7 +13,7 @@
     var toBuyList = this;
 
 
-    toBuyList.toBuyItems = ShoppingListCheckOffService.getToBuyItems();
+    toBuyList.items = ShoppingListCheckOffService.getToBuyItems();
 
     toBuyList.itemName = "";
     toBuyList.itemQuantity = "";
@@ -31,7 +31,7 @@
     };
 
 		toBuyList.hasItems = function(){
-			return toBuyList.toBuyItems.length;
+			return toBuyList.items.length;
 		}
 
     toBuyList.bought = function (itemIndex) {
@@ -46,14 +46,14 @@
     var alreadyBoughtList = this;
 
 
-    alreadyBoughtList.boughtItems = ShoppingListCheckOffService.getBoughtItems();
+    alreadyBoughtList.items = ShoppingListCheckOffService.getBoughtItems();
 
     alreadyBoughtList.itemName = "";
     alreadyBoughtList.itemQuantity = "";
 
 
     		alreadyBoughtList.hasItems = function(){
-    			return alreadyBoughtList.boughtItems.length;
+    			return alreadyBoughtList.items.length;
     		}
 
     alreadyBoughtList.removeBoughtItem = function (itemIndex) {
