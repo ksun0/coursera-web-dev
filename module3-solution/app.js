@@ -36,7 +36,7 @@ function NarrowItDownController(MenuSearchService) {
 
   ctrl.showSearchedItems = function() {
 
-    ctrl.message = 'please wait untill loading...';
+    ctrl.message = 'loading...';
 
     var promise = MenuSearchService.getMatchedMenuItems(ctrl.searchTerm);
 
