@@ -6,6 +6,10 @@ body {
   background-size: cover;
 }
 
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  opacity: 0.8;
+}
+
 h1 {
   color: white;
   margin-bottom: 30px;
