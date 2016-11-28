@@ -1,0 +1,17 @@
+<h3>{{ ctrl.myMessage }}</h3>
+<table class="table table-striped">
+  <tr ng-repeat="item in ctrl.foundItems">
+    <td>
+      {{item.name}}
+    </td>
+    <td>
+      {{item.short_name}}
+    </td>
+    <td>
+      {{item.description}}
+    </td>
+    <td>
+      <button ng-click="ctrl.onRemove({index: $index});" class="btn btn-default" type="button" name="button">Don't want this one!</button>
+    </td>
+  </tr>
+</table>
